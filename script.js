@@ -1,38 +1,25 @@
-const form = document.querySelector("#to-do-form");
-const tasks = document.querySelector("#tasks").getElementsByTagName('tbody')[0];
+let list = [];
 
-const buildNewRow = (title, priority) => {
-    const t = document.createElement('td');
-    const p = document.createElement('td');
-    const del_btn = document.createElement('span');
-    t.innerHTML = title;
-    p.innerHTML = priority;
-    del_btn.className += ('remove-task glyphicon glyphicon-trash');
-    del_btn.addEventListener('click', deletionHandler);
-    const row = document.createElement('tr');
-    row.appendChild(t);
-    row.appendChild(p);
-    row.appendChild(del_btn);
-    row.addEventListener('click', doneHandler);
-
-    return row;
+const addToList = () => {
+  let newTask = document.getElementById('new__task');
+  let todoList = document.getElementById('list');
+  let item = document.createElement('li');
+  
+  
+  // Add New Task To Item
+  item.innerHTML = newTask.value;
+  
+  // Add Item To List
+  todoList.appendChild(item);
+  list.push(newTask.value);
+  
+  //
+  newTask.value = '';
 }
 
-const deletionHandler = (e) => {
-    e.currentTarget.parentNode.remove();
+const moveFromList = () => {
+   let todoList = document.getElementById('list');
+  
+  
+   todoList.innerHTML = '';
 }
-
-const doneHandler = (e) => {
-    e.currentTarget.classList.toggle('done');
-}
-
-const addHandler = (e) => {
-    e.preventDefault();
-    const title = e.currentTarget.title.value.trim();
-    const priority = e.currentTarget.priority.value;
-    tasks.appendChild(buildNewRow(title, priority));
-    e.currentTarget.title.value = "";
-    e.currentTarget.priority.value = "";  
-}
-
-form.addEventListener('submit',addHandler);
