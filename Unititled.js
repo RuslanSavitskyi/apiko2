@@ -15,57 +15,57 @@ console.log(element);
     
 let students = [
     {
-        firstName: 'Ivan',
-        lastName:  'Aleksienko',
+        firstName: 'Ruslan',
+        lastName:  'Savitskyi',
         ratting:   '75'
     },
     {
-        firstName: 'Nazar',
-        lastName:  'Bochnak',
-        ratting: '90'
+        firstName: 'Sergiy',
+        lastName:  'Revitskyi',
+        ratting: '70'
     },
    
     {
-        firstName: 'Nazar',
-        lastName:  'Koshitsky',
-        ratting: '90',
+        firstName: 'Vadim',
+        lastName:  'Samoylov',
+        ratting: '75',
     },
 
     {
-        firstName: 'Tetyana',
-        lastName:  'Romanyuk',
-        ratting: '90',
+        firstName: 'Denis',
+        lastName:  'Shapoval',
+        ratting: '70',
     },
 
     {
-        firstName: 'Tetyana',
-        lastName:  'Palianytsa',
-        ratting: '92',
+        firstName: 'Dima',
+        lastName:  'Koval',
+        ratting: '65',
     },
     {
-        firstName: 'Igor',
-        lastName:  'Mandzyuk',
-        ratting: '89',
+        firstName: 'Vitaliy',
+        lastName:  'Dmitruk',
+        ratting: '80',
     },
     {
         firstName: 'Ivan',
-        lastName:  'Melnichuk',
-        ratting: '78',
+        lastName:  'Kiselichnik',
+        ratting: '85',
     },
     {
         firstName: 'Petro',
         lastName:  'Podminohin',
-        ratting: '76',
+        ratting: '70',
     },
     {
-        firstName: 'Oleg',
-        lastName:  'Batun',
+        firstName: 'Vasiliy',
+        lastName:  'Lukyanchuk',
         ratting: '60',
     },
     {
         firstName: 'Bohdan',
-        lastName:  'Timchishin',
-        ratting: '79',
+        lastName:  'Saichishin',
+        ratting: '80',
     },
 ]
 
